@@ -1,0 +1,45 @@
+version: 0.1
+updated_at: 2026-05-05
+note: External signals are candidates for attention, not truth.
+feeds:
+  - id: github.agency_agents.releases
+    provider: github
+    type: atom
+    url: https://github.com/msitarzewski/agency-agents/releases.atom
+    category: ai_tools
+    status: candidate
+
+  - id: github.postiz_app.commits
+    provider: github
+    type: atom
+    url: https://github.com/gitroomhq/postiz-app/commits.atom
+    category: social_growth
+    status: candidate
+
+  - id: github.postiz_agent.commits
+    provider: github
+    type: atom
+    url: https://github.com/gitroomhq/postiz-agent/commits.atom
+    category: social_growth
+    status: candidate
+
+  - id: github.openshorts.commits
+    provider: github
+    type: atom
+    url: https://github.com/mutonby/openshorts/commits.atom
+    category: social_growth
+    status: candidate
+
+  - id: github.mcp_registry.releases
+    provider: github
+    type: atom
+    url: https://github.com/modelcontextprotocol/registry/releases.atom
+    category: mcp_connectors
+    status: candidate
+
+  - id: github.modelcontextprotocol_servers.releases
+    provider: github
+    type: atom
+    url: https://github.com/modelcontextprotocol/servers/releases.atom
+    category: mcp_connectors
+    status: candidate

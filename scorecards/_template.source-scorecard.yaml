@@ -1,0 +1,12 @@
+version: 0.1
+source_id: <feed_id>
+scorecard:
+  relevance: 0
+  freshness: 0
+  reliability: 0
+  actionability: 0
+notes:
+  confirmed_facts: []
+  assumptions: []
+  unverified: []
+  risks: []

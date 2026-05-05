@@ -1,0 +1,14 @@
+version: 0.1
+categories:
+  - id: ai_tools
+    description: Signals about AI tools, releases, and product capability changes.
+  - id: social_growth
+    description: Signals related to social distribution, audience growth, and content leverage.
+  - id: mcp_connectors
+    description: Signals about MCP registries, servers, and connector ecosystems.
+  - id: security_governance
+    description: Signals impacting policy, trust, compliance, and operational governance.
+  - id: competitor_market
+    description: Signals about competitor moves, launches, and market positioning.
+  - id: external_talent_updates
+    description: Signals indicating people, teams, and community talent activity.

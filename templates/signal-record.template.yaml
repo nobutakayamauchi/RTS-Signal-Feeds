@@ -1,0 +1,13 @@
+version: 0.1
+signal_id: <unique_signal_id>
+source_id: <feed_id>
+captured_at: <ISO-8601>
+category: <category_id>
+title: <short_title>
+url: <source_url>
+summary: <short_summary>
+downstream_routes: []
+confirmed_facts: []
+assumptions: []
+unverified: []
+risks: []
