@@ -1,79 +1,58 @@
 # RTS-Signal-Feeds Status
 
-Status: FREEZE / SIGNAL-SKELETON / REVIEW BEFORE USE
+Status: FREEZE / SIGNAL-SKELETON + BOUNDED DISCOVERY EVALUATOR / REVIEW BEFORE USE
 
-RTS-Signal-Feeds is a non-executable signal intelligence skeleton for the RTS ecosystem.
-
-Its purpose is to describe how external signals may be registered, summarized, scored, and routed as candidate attention inputs.
+RTS-Signal-Feeds remains a signal-intelligence skeleton for the RTS ecosystem. One narrowly bounded executable responsibility is allowed: the adapter-neutral Discovery Sweep evaluator used to validate current-landscape coverage, provenance, freshness, frontier follow-up, and evidence-bounded saturation before ULTIMATE LOOP superiority claims.
 
 It is not RTS core.
-
 It is not RTS-AGE.
-
 It is not an ingestion runtime.
-
-It is not a scraping system.
-
+It is not a scraping or browser-crawling system.
 It is not a publishing system.
-
 It is not a source of truth.
 
 ## Current Position
 
-This repository should remain frozen unless there is a concrete signal-review task.
+The repository stays frozen except for concrete signal-review work and bounded repair/regression of the Discovery Sweep evaluator.
 
-The current skeleton may be useful as a reference for source registration, feed scoring, summary templates, digest shape, and routing intent.
-
-However, it should not become active collection, publishing, or routing infrastructure by default.
+Actual acquisition remains external and replaceable: search engines, feeds, GitHub/package APIs, browser crawlers, official documentation search, human research, or AI-assisted research.
 
 Allowed by default:
-
-- clarify signal boundaries
-- document signal templates
-- document source registry fields
-- document scoring and routing assumptions
-- improve separation of confirmed facts, assumptions, unverified material, and risks
-- classify existing signal artifacts as draft, stale, risky, or archive candidates
-- preserve the repository as a non-executable signal skeleton
+- clarify signal boundaries and templates;
+- maintain source registry/scoring/routing metadata;
+- separate confirmed facts, assumptions, unverified material, and risks;
+- run or repair the bounded `scripts/discovery_sweep.py` evaluator;
+- validate source-class coverage, evidence references, freshness, frontier follow-up, UNKNOWN resolution, and bounded saturation;
+- preserve historical signal/discovery evidence.
 
 Prohibited by default:
+- implementing page fetching, scraping, browser automation, URL queues, retry/rate-limit infrastructure, or crawler bypass logic;
+- adding scheduled/always-on ingestion;
+- adding automatic publishing or SNS posting;
+- adding API keys, secrets, credentials, or private links;
+- storing canonical downstream manifests;
+- treating external signals as facts without review;
+- routing signals into live operations automatically;
+- granting build, METEOR-win, or promotion authority from discovery output;
+- turning this repository into RTS core, RTS-AGE, or a general runtime platform.
 
-- adding executable ingestion code
-- adding scraping implementations
-- adding automatic publishing
-- adding SNS posting execution
-- adding API keys, secrets, credentials, or private links
-- storing canonical downstream manifests
-- treating external signals as facts without review
-- routing signals into live operations automatically
-- turning this repository into RTS core, RTS-AGE, or runtime infrastructure
+## Hard Boundary
 
-## Boundary
+`DISCOVERY EVALUATOR != ACQUISITION ENGINE`
 
-RTS defines canonical protocol and reconstructability rules.
+`SEARCH_SATURATED_UNDER_CURRENT_EVIDENCE != COMPLETE_WEB_KNOWLEDGE`
 
-RTS-AGE may prepare implementation artifacts under review boundaries.
-
-RTS-Skills, RTS-Talent-Registry, RTS-MCP-Packs, and RTS-Hermes-Drive own their own component definitions.
-
-RTS-Signal-Feeds should only describe candidate signal intake and routing metadata.
-
-It should not absorb upstream manifests, create live ingest pipelines, or publish external outputs.
+`DISCOVERY != METEOR WIN != PROMOTION AUTHORITY`
 
 ## Freeze Definition
 
-This repository is considered safely frozen when:
-
-1. Its signal-skeleton role is explicit.
-2. External signals are treated as attention candidates, not truth.
-3. Epistemic fields are preserved: confirmed facts, assumptions, unverified material, and risks.
-4. Runtime ingestion, scraping, publishing, and automatic routing are prohibited by default.
-5. Future edits require a concrete signal-review purpose.
+The repository is safely frozen when:
+1. the signal-skeleton role and bounded evaluator exception are explicit;
+2. external signals remain attention candidates, not truth;
+3. runtime scraping/publishing/automatic routing remain prohibited;
+4. Discovery Sweep owns only validation/control-plane glue, not acquisition;
+5. future executable changes are limited to evidence-backed repair/regression or a separate explicit decision record.
 
 ## Current Decision
 
-Keep this repository frozen.
-
-Treat it as a signal intelligence skeleton and archive-adjacent reference.
-
-Do not expand it into live collection, publishing, automatic routing, or runtime infrastructure without a separate decision record.
+Keep RTS-Signal-Feeds frozen with the bounded Discovery Sweep evaluator as the only approved executable exception.
