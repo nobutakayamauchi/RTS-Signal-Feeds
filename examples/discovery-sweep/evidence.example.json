@@ -1,0 +1,33 @@
+{
+  "rounds": [
+    {
+      "round": 1,
+      "queries": [
+        {"source_class": "official_docs", "query": "example official implementation", "status": "SEARCHED", "evidence_ref": "search:official:001"},
+        {"source_class": "github", "query": "example github implementation", "status": "SEARCHED", "evidence_ref": "search:github:001"},
+        {"source_class": "package_registry", "query": "example package", "status": "SEARCHED", "evidence_ref": "search:pkg:001"}
+      ],
+      "hits": [
+        {"candidate_id": "candidate:example", "source_class": "github", "source_ref": "github:example", "captured_at": "2026-08-14T00:30:00+09:00", "materiality": "MATERIAL", "relation_types": ["competitor"]}
+      ]
+    },
+    {
+      "round": 2,
+      "queries": [
+        {"source_class": "official_docs", "query": "terms learned in round 1", "status": "SEARCHED", "evidence_ref": "search:official:002"},
+        {"source_class": "github", "query": "terms learned in round 1", "status": "SEARCHED", "evidence_ref": "search:github:002"},
+        {"source_class": "package_registry", "query": "terms learned in round 1", "status": "SEARCHED", "evidence_ref": "search:pkg:002"}
+      ],
+      "hits": []
+    },
+    {
+      "round": 3,
+      "queries": [
+        {"source_class": "official_docs", "query": "adjacent architecture", "status": "SEARCHED", "evidence_ref": "search:official:003"},
+        {"source_class": "github", "query": "adjacent architecture", "status": "SEARCHED", "evidence_ref": "search:github:003"},
+        {"source_class": "package_registry", "query": "adjacent architecture", "status": "SEARCHED", "evidence_ref": "search:pkg:003"}
+      ],
+      "hits": []
+    }
+  ]
+}
