@@ -1,0 +1,18 @@
+name: Temporary Discovery v0.2 Regression
+on:
+  pull_request:
+    paths:
+      - 'scripts/discovery_sweep.py'
+      - 'tests/test_discovery_sweep.py'
+      - 'docs/STATUS.md'
+      - '.github/workflows/temporary-discovery-v02-regression.yml'
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Discovery Sweep regression
+        run: python -m unittest discover -s tests -p 'test_discovery_sweep.py' -v
