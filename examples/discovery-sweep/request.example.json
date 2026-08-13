@@ -1,0 +1,17 @@
+{
+  "sweep_id": "sweep-example-001",
+  "subject": "example challenger landscape",
+  "frozen_workload_ref": "workload:example-v1",
+  "source_classes": [
+    {"id": "official_docs", "required": true},
+    {"id": "github", "required": true},
+    {"id": "package_registry", "required": true},
+    {"id": "research", "required": false},
+    {"id": "community", "required": false}
+  ],
+  "policy": {
+    "min_rounds": 3,
+    "quiet_rounds_to_saturate": 2,
+    "max_new_material_per_quiet_round": 0
+  }
+}
