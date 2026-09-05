@@ -1,64 +1,25 @@
 # AGENTS Instructions for RTS-Signal-Feeds
 
-## Scope
+## Status
+**COLD / FROZEN NON-EXECUTABLE SKELETON / EXPLICIT REFERENCE ONLY**
 
-These instructions apply to the entire repository.
+This repository describes a signal-intelligence skeleton for candidate external signals. It is not an ingestion runtime, publishing system, execution layer, or source of truth.
 
-## Required reading
+## Load rule
+Do not include this repository in ordinary cross-repository implementation discovery.
 
-Before editing, read:
+Open it only when the task explicitly concerns:
+- historical/current signal-feed schema or routing concepts;
+- candidate-attention classification;
+- review of whether this frozen skeleton should be revived, replaced, or retired.
 
-1. `README.md`
-2. `docs/STATUS.md`
-3. `docs/NEXT.md`
-
-## Purpose
-
-This repository is a **frozen non-executable signal intelligence skeleton** for the RTS ecosystem.
-
-It describes how external signals may be registered, summarized, scored, and routed as candidate attention inputs.
-
-It is not an ingestion runtime.
-
-It is not a publishing system.
-
-It is not a source of truth.
+External signals are candidate inputs, not truth. Do not load feed artifacts merely because another repository mentions external discovery.
 
 ## Hard boundaries
+- Do not add executable ingestion/scraping by default.
+- Do not add API keys, credentials, private links, SNS publishing, or automatic live routing.
+- Do not treat this repository as RTS core, RTS-AGE, or canonical project truth.
+- Do not embed canonical manifests from Skills, Talent Registry, MCP Packs, Hermes Drive, or RTS records.
 
-- Do not add executable ingestion/scraping implementations.
-- Do not add API keys, secrets, credentials, or private links.
-- Do not include full manifests for RTS-Skills, RTS-Talent-Registry, RTS-MCP-Packs, Hermes drive, or RTS trust records.
-- Do not implement SNS publishing.
-- Do not implement automatic live routing.
-- Do not treat external signals as facts without review.
-- Do not turn this repository into RTS core, RTS-AGE, or runtime infrastructure.
-
-## Signal epistemics
-
-All external signals are candidate inputs for attention and triage, not truth by default.
-
-Always separate:
-
-- confirmed_facts
-- assumptions
-- unverified
-- risks
-
-## Freeze boundary
-
-Treat the next pass as freeze review and signal inventory, not expansion.
-
-If an item implies executable ingestion, scraping, automatic publishing, live routing, or treating unverified material as fact, mark it as `RISKY` and do not expand it.
-
-If this repository is not needed for current work, leave it frozen.
-
-## Change style
-
-- Keep docs and templates lightweight and explicit.
-- Prefer additive edits; avoid destructive rewrites.
-- Prefer review-boundary documentation over implementation.
-
-## Validation
-
-For documentation-only changes, report changed files and confirm that no executable ingestion code, scraping implementation, secrets, private links, automatic publishing, live routing, canonical downstream manifest storage, or runtime behavior was added.
+## Stop condition
+If the active task does not explicitly concern Signal Feeds, stop reading this repository and use the task's current canonical source instead.
